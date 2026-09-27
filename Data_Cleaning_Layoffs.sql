@@ -1,4 +1,4 @@
--- SQL Project - Data Cleaning of layoffs
+-- SQL Project - Data Cleaning of layoffs - TROY
 
 -- https://www.kaggle.com/datasets/swaptr/layoffs-2022
 
