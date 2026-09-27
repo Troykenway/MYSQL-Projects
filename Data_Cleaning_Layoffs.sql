@@ -18,7 +18,7 @@ SELECT * FROM world_layoffs.layoffs;
 -- 1. Check for duplicates and remove any
 -- 2. Standardize data and fix errors
 -- 3. Look at null values and see what 
--- 4. remove any columns and rows that are not necessary - few ways
+-- 4. Remove any columns and rows that are not necessary - few ways
 
 
 -- 1. Remove Duplicates
@@ -183,7 +183,7 @@ FROM world_layoffs.layoffs_staging2
 WHERE company LIKE 'airbnb%';
 
 -- It looks like Airbnb is a travel company, but this one just isn't populated.
--- write a query that if there is another row with the same company name, it will update it to the non-null industry values
+-- Write a query that, if there is another row with the same company name, it will update it to the non-null industry values
 
 UPDATE world_layoffs.layoffs_staging2
 SET industry = NULL
@@ -240,7 +240,7 @@ ORDER BY country;
 UPDATE layoffs_staging2
 SET country = TRIM(TRAILING '.' FROM country);
 
--- now if we run this again it is fixed
+-- Now, if we run this again, it is fixed
 SELECT DISTINCT country
 FROM world_layoffs.layoffs_staging2
 ORDER BY country;
