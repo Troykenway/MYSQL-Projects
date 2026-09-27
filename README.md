@@ -75,5 +75,3 @@ The goal was to transform raw, messy data into a **clean, reliable dataset** rea
 2. Import into your SQL environment (MySQL recommended).
 3. Run the provided SQL scripts step by step.
 4. Final cleaned table: `world_layoffs.layoffs_staging2`.
-
-## 📂 Repository Structure
